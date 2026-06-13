@@ -33,6 +33,7 @@ html { scroll-behavior: smooth; }
 body {
   display: flex;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   font-family: var(--font);
   background: var(--bg-deep);
@@ -807,6 +808,46 @@ textarea[name="text"]:focus {
   .search-wrap input:focus { width: 200px; }
   .topbar-title h1 { font-size: 14px; }
   .topbar-sub { display: none; }
+  
+  /* Mobile responsiveness enhancements for input box and spacing */
+  .input-form {
+    padding: 10px 12px 14px;
+  }
+  .input-row {
+    gap: 6px;
+  }
+  .file-label, .send-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  textarea[name="text"] {
+    padding: 9px 12px;
+    font-size: 13px;
+    min-height: 40px;
+  }
+  .messages-feed {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+  .topbar {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+  .pipeline-banner {
+    padding: 24px 16px;
+    margin-top: 16px;
+  }
+  .pipeline-steps {
+    gap: 12px;
+  }
+  .pipe-step {
+    flex: 1 1 calc(50% - 12px);
+    min-width: 120px;
+  }
+  .pipe-arrow {
+    display: none;
+  }
 }
 
 /* ════════════════════════════════════════════
@@ -818,6 +859,7 @@ textarea[name="text"]:focus {
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   background: var(--bg-deep);
 }
 

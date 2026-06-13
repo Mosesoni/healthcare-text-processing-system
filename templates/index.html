@@ -478,6 +478,12 @@ window.addEventListener('DOMContentLoaded', () => {
   if (toggle)  toggle.addEventListener('click',  toggleSidebar);
   if (burger)  burger.addEventListener('click',  toggleSidebar);
 
+  // Collapse sidebar by default on mobile screen on load
+  if (window.innerWidth <= 768 && sidebar && main) {
+    sidebar.classList.add('collapsed');
+    main.classList.add('sidebar-collapsed');
+  }
+
   // File input label feedback
   const fileInput = document.getElementById('fileInput');
   const fileLabel = document.querySelector('.file-label');
