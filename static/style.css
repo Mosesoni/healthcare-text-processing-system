@@ -763,6 +763,15 @@ textarea[name="text"]:focus {
   font-style: italic;
 }
 
+.main-footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--text-dim);
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding-top: 8px;
+}
+
 /* ── Spinner */
 .spinner {
   display: inline-block;
